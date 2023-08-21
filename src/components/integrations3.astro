@@ -1,0 +1,164 @@
+---
+import { Picture } from "@astrojs/image/components";
+import Link from "./ui/link.astro";
+import { Icon } from "astro-icon";
+---
+
+<section class="bg-slate-90">
+  <div class="mx-auto mt-3 w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24">
+    <div class="max-w-3xl mx-auto md:text-center">
+      <h2 class="text-black font-extrabold lg:text-5xl text-4xl tracking-tight">
+       Categories
+      </h2>
+    </div>
+    <ul
+      role="list"
+      class="grid max-w-2xl grid-cols-1 gap-6 mx-auto mt-16 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-4"> <!-- Increased grid-cols to 4 -->
+      <li>
+        <figure class="relative h-full p-6 bg-white rounded-3xl">
+          <blockquote class="relative">
+            <!-- Content for Box 1 -->
+          </blockquote>
+          <figcaption
+            class="relative flex items-center justify-between pt-6 mt-6 border-t border-slate-100">
+            <div class="overflow-hidden rounded-full bg-slate-50">
+              <img
+                alt=""
+                src="https://images.unsplash.com/photo-1577202214328-c04b77cefb5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2073&q=80"
+                width="56"
+                height="56"
+                decoding="async"
+                data-nimg="future"
+                class="object-cover h-14 w-14"
+                loading="lazy"
+                style="color: transparent"
+              />
+            </div>
+            <div>
+              <div class="text-xl font-extrabold leading-6 text-black font-display">
+                Production databases
+              </div>
+            </div>
+          </figcaption>
+        </figure>
+      </li>
+      <!-- Duplicating the OpenAI box 5 more times -->
+      <li>
+        <figure class="relative h-full p-6 bg-white rounded-3xl">
+          <blockquote class="relative">
+            <!-- Content for Box 1 -->
+          </blockquote>
+          <figcaption
+            class="relative flex items-center justify-between pt-6 mt-6 border-t border-slate-100">
+            <div class="overflow-hidden rounded-full bg-slate-50">
+              <img
+                alt=""
+                src="https://images.unsplash.com/photo-1577202214328-c04b77cefb5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2073&q=80"
+                width="56"
+                height="56"
+                decoding="async"
+                data-nimg="future"
+                class="object-cover h-14 w-14"
+                loading="lazy"
+                style="color: transparent"
+              />
+            </div>
+            <div>
+              <div class="text-xl font-extrabold leading-6 text-black font-display">
+                Cloud data warehouses
+              </div>
+            </div>
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="relative h-full p-6 bg-white rounded-3xl">
+          <blockquote class="relative">
+            <!-- Content for Box 1 -->
+          </blockquote>
+          <figcaption
+            class="relative flex items-center justify-between pt-6 mt-6 border-t border-slate-100">
+            <div class="overflow-hidden rounded-full bg-slate-50">
+              <img
+                alt=""
+                src="https://images.unsplash.com/photo-1577202214328-c04b77cefb5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2073&q=80"
+                width="56"
+                height="56"
+                decoding="async"
+                data-nimg="future"
+                class="object-cover h-14 w-14"
+                loading="lazy"
+                style="color: transparent"
+              />
+            </div>
+            <div>
+              <div class="text-xl font-extrabold leading-6 text-black font-display">
+                Internal & 3rd party APIs
+              </div>
+            </div>
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="relative h-full p-6 bg-white rounded-3xl">
+          <blockquote class="relative">
+            <!-- Content for Box 1 -->
+          </blockquote>
+          <figcaption
+            class="relative flex items-center justify-between pt-6 mt-6 border-t border-slate-100">
+            <div class="overflow-hidden rounded-full bg-slate-50">
+              <img
+                alt=""
+                src="https://images.unsplash.com/photo-1577202214328-c04b77cefb5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2073&q=80"
+                width="56"
+                height="56"
+                decoding="async"
+                data-nimg="future"
+                class="object-cover h-14 w-14"
+                loading="lazy"
+                style="color: transparent"
+              />
+            </div>
+            <div>
+              <div class="text-xl font-extrabold leading-6 text-black font-display">
+                Cloud Storage
+              </div>
+            </div>
+          </figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure class="relative h-full p-6 bg-white rounded-3xl">
+          <blockquote class="relative">
+            <!-- Content for Box 1 -->
+          </blockquote>
+          <figcaption
+            class="relative flex items-center justify-between pt-6 mt-6 border-t border-slate-100">
+            <div class="overflow-hidden rounded-full bg-slate-50">
+              <img
+                alt=""
+                src="https://images.unsplash.com/photo-1577202214328-c04b77cefb5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2073&q=80"
+                width="56"
+                height="56"
+                decoding="async"
+                data-nimg="future"
+                class="object-cover h-14 w-14"
+                loading="lazy"
+                style="color: transparent"
+              />
+            </div>
+            <div>
+              <div class="text-xl font-extrabold leading-6 text-black font-display">
+                Spreadsheets
+              </div>
+            </div>
+          </figcaption>
+        </figure>
+      </li>
+      <div>
+    </ul>
+    <div class="bg-black text-white p-1 md:p-0 md:pt-1 md:pb-1 mt-4 mx-auto max-w-xs rounded-lg flex flex-col items-center text-center">
+    <Link href="#" style="inverted; color: white;">See all integrations</Link>
+</div>"
+  </div>
+</section>

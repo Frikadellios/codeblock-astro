@@ -1,0 +1,41 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon";
+
+const features = [
+  {
+    title: "Find it in Codeblocks library",
+    description:
+      "Our component library is built into Codeblocks, a powerful platform that allows you to connect to any API or data source, drag and drop to build UI, write code anywhere, and publish your apps in record time.",
+    icon: "bx:bxs-briefcase",
+  },
+  {
+    title: "Components for every use case",
+    description:
+      "Codeblocks offers over 150 expertly crafted components, designed to handle every data type and UI for internal tools. Get a head start with built-in validation, keyboard accessibility, time zone handling, and more..",
+    icon: "bx:bxs-window-alt",
+  },
+  {
+    title: "Little to no setup required",
+    description:
+      "You don't have to be a frontend expert to build beautiful, user-friendly apps. Stick with production-ready defaults or make the UI your own with countless ways to configure, style, and theme each component.",
+    icon: "bx:bxs-data",
+  },
+];
+---
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-4 gap-4">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>

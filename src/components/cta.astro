@@ -1,0 +1,30 @@
+---
+import { Picture } from "@astrojs/image/components";
+import Link from "@components/ui/link.astro";
+import { Icon } from "astro-icon";
+---
+
+<main
+  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
+  
+  <div>
+    <h1
+      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
+      Built for developers
+    </h1>
+<p class="text-black text-lg font-bold mt-4 text-slate-600">
+    CodeBlocks is highly hackable, so you're never limited by what's available out of the box. If you can write it with JavaScript and an API, you can build it in CodeBlocks. You can write JavaScript almost anywhere by wrapping an expression with double brackets and it'll execute as sandboxed JS. Using Transformers, you can write larger, reusable blocks of code for manipulating data. There's also a native API for directly interacting with components and queries via JS.
+  </p>
+<div class="mt-6 flex flex-col sm:flex-row gap-3">
+      <Link
+        href="#"
+        href="http://eepurl.com/ixCxFU"
+        target="_blank"
+        class="flex gap-1 items-center justify-center"
+        rel="noopener">
+        Write JavaScript in CodeBlocks
+      </Link>
+      
+    </div>
+  </div>
+</main>

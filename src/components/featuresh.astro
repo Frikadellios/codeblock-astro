@@ -1,0 +1,47 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon";
+
+const features = [
+  {
+    title: "Host on-premise",
+    description:
+      "You can host CodeBlocks on-premises, behind your own VPN, and in your own VPC. Deploy via Docker or Kubernetes",
+    icon: "bx:bxs-briefcase",
+  },
+  {
+    title: "Git Version Control",
+    description:
+      "Sync CodeBlocks apps to a Git repository, so you can manage CodeBlocks apps as code. Oh, and choose what version is deployed in a nice GUI.",
+    icon: "bx:bxs-window-alt",
+  },
+  {
+    title: "Clear permission handling",
+    description:
+      "Granularly control what users can access which apps and which resources. And after they use the apps, query what they did via the audit logs. (Which you can then build CodeBlocks apps atop of.)",
+    icon: "bx:bxs-data",
+  },
+  {
+    title: "SAML SSO and 2FA",
+    description:
+      "Sign in with the services you already use, including Google, Okta, Active Directory Federation Services, and other SAML-based identity providers. Import groups and use them inside of CodeBlocks.",
+    icon: "bx:bxs-bot",
+  },
+];
+---
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-4 gap-4">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
